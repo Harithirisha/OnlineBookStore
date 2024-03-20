@@ -1,0 +1,71 @@
+/* Reset default browser styles */
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('/IMAGES/bookbg.webp') no-repeat center center fixed; /* Updated background image */
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0c0c0c;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #054214;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Add margin around buttons */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Show order button specific styles */
+.showOrdersBtn {
+    background-color: #000000;
+}
+
+/* Delete button specific styles */
+.deleteBtn {
+    background-color: #000000;
+}
+
+.deleteBtn:hover {
+    background-color: #000000;
+}
+
+/* Orders container styles */
+#ordersContainer {
+    background-color: #a09191d7; /* White background */
+    color: #000; /* Black text */
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}

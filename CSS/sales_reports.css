@@ -1,0 +1,72 @@
+body {
+    background: url('/IMAGES/bookbg.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full viewport height */
+}
+
+h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    width: 25vw;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#salesContainer {
+    margin-top: 20px;
+    color: white;
+}
+
+/* Styling for date selection */
+.dateFilters {
+    margin-top: 20px;
+    color: black; /* Set text color to black */
+    font-size: 20px; /* Increase font size */
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="date"] {
+    background-color: rgba(0, 0, 0, 0); /* Set background color of date selector */
+    color: rgb(0, 0, 0); /* Set text color of date selector */
+    font-size: 20px; /* Increase font size of date selector */
+    border: 1px solid black; /* Add border to date selector */
+    border-radius: 5px; /* Add border radius to date selector */
+    padding: 5px; /* Add padding to date selector */
+}

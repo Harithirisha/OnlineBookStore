@@ -1,0 +1,44 @@
+body {
+    background: url('/IMAGES/bookbg.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensures the content is centered vertically */
+    margin: 0; /* Remove default margin */
+}
+
+h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    width: 25vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+a:active {
+    background-color: rgba(0, 0, 0, 0.9);
+}

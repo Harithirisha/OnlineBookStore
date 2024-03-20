@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/IMAGES/bookbg.webp') center center fixed; /* Added background image */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    color: #333; /* Set text color to a darker shade */
+    opacity: 0.9; /* Set opacity of the background image */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Changed height to cover the entire viewport */
+}
+
+.wrapper {
+    width: 330px;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+}
+
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3.5rem; /* Increased font size */
+    font-weight: bold; /* Increased font weight */
+    color: #000000; /* Set font color to black */
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.9); /* Transparent black background */
+    border: 1px solid #000; /* Black border */
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* White text */
+}
+
+.box h3 {
+    cursor: pointer;
+    opacity: 0.9; /* Adjusted opacity for semi-transparent effect */
+}
+
+h1 {
+    margin-bottom: 1.2rem;
+}
+
+form input {
+    width: 92%;
+    outline: none;
+    border: 1px solid #ccc; /* Changed input border color */
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #f8f8f8; /* Changed input background color */
+}
+
+button {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    background: #4CAF50; /* Changed button background color */
+    color: #fff; /* Changed button text color */
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+input:focus {
+    border: 1px solid #66afe9; /* Changed focus border color */
+}
+
+.member {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+
+.member a {
+    color: #1976D2; /* Changed link color */
+    text-decoration: none;
+}

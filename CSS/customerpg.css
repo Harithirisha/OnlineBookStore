@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/IMAGES/bookbg.webp');
+}
+
+/* Styles for header */
+header {
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0px 0;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu-toggle {
+    position: fixed; /* Set position to fixed */
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    width: 45px; /* Adjust width as needed */
+    height: 45px; /* Adjust height as needed */
+    background-color: transparent; /* Set background color to transparent */
+    border: none; /* Remove border */
+    cursor: pointer; /* Set cursor to pointer */
+    z-index: 9999; /* Ensure the button is above other elements */
+}
+
+.header-profile-pic {
+    width: 100%; /* Occupy full width of the button */
+    height: 100%; /* Occupy full height of the button */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Product grid styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust according to content */
+    gap: 50px; /* Adjust the gap between grid items */
+    height: auto; /* Set height to auto to adjust based on content */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.product-card {
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    position: relative; /* Added position relative for button positioning */
+    overflow: hidden; /* Hide overflow to prevent button overflow */
+    transition: box-shadow 0.3s ease; /* Add transition effect for box-shadow */
+}
+
+/* Animation for when hovering over product card */
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.068); /* Add shadow when hovering */
+}
+
+.product-card h3 {
+    margin-top: 0;
+    color: #fff; /* White text color */
+    font-weight: bold; /* Make the font bold */
+}
+
+/* Add to cart button styles */
+/* Add to cart button styles */
+.add-to-cart {
+    position: absolute;
+    bottom: 10px; /* Position at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #000000; /* Green */
+    border: none;
+    color: #fff; /* White text color */
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none; /* Initially hide button */
+    z-index: 1; /* Ensure button is above other content */
+}
+
+/* Show add to cart button when hovering over product card */
+.product-card:hover .add-to-cart {
+    display: block;
+}
+
+.cart-wrapper {
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    margin-top: 20px; /* Add top margin */
+}
+
+#totalprice {
+    font-size: medium;
+    color: #ffffff; /* White text color */
+}
+/* 
+#paymentButton {
+    background-color: #131212;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+#paymentButton:hover {
+    background-color: #4CAF50;
+} */
+
+.card {
+    background-color: #ffffff00;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add top margin */
+}
+
+#cart{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+label[for="paymentMethod"] {
+    font-size: 20px; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: black; /* Black text color */
+    display: block; /* Ensure the label is displayed as a block */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    margin-left: 25px;
+}
+
+#paymentMethod {
+    font-size: large; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: black; /* Black text color */
+    padding: 8px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    margin-left: 25px;
+}
+
+/* Button styling */
+#paymentButton {
+    font-size: large; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: rgb(255, 255, 255); /* Black text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    background-color: #000000; /* Light gray background color */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+#paymentButton:hover {
+    background-color: #c0c0c0; /* Darker gray background color on hover */
+}

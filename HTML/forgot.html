@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot password</title>
+    <link rel="stylesheet" href="/CSS/signup.css">
+    <link rel="icon" href="/IMAGES/bookstore.jpg" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Reset Password</h1> <!-- Moved the "Reset Password" heading inside the wrapper -->
+            <div class="main">
+                <form>
+                    <div>
+                        <input type="text" name="" placeholder="Email" id="email">
+                    </div>
+                    <div>
+                        <button type="button" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js"></script>
+    <script type="module" src="/JAVASCRIPT/forgot.js"></script>
+</body>
+</html>
